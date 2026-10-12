@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="quote.css" />
+  <body>
+       
+    <main>
+            <div class="top-row">
+      <div class="title-block">
+       <button class="home-btn">Home</button>
+      </div>
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+        <svg id="sun" class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="4"></circle>
+          <line x1="12" y1="2" x2="12" y2="4.5"></line>
+          <line x1="12" y1="19.5" x2="12" y2="22"></line>
+          <line x1="4.2" y1="4.2" x2="6" y2="6"></line>
+          <line x1="18" y1="18" x2="19.8" y2="19.8"></line>
+          <line x1="2" y1="12" x2="4.5" y2="12"></line>
+          <line x1="19.5" y1="12" x2="22" y2="12"></line>
+          <line x1="4.2" y1="19.8" x2="6" y2="18"></line>
+          <line x1="18" y1="6" x2="19.8" y2="4.2"></line>
+        </svg>
+        <svg id="moon" class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"></path>
+        </svg>
+      </button>
+    </div>
+
+        <div class="h1-div">
+            <h1>Quote of the day -</h1>
+        </div>
+
+      <div class="container">
+          <div>
+              <p id="quote"></p>
+              <p id="author"></p>
+          </div>
+          <button id="new-quote">New quote</button>
+      </div>
+
+      
+    </main>
+
+    <script src="qutoe.js"></script>
+  </body>
+</html>

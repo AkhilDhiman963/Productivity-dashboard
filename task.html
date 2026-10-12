@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> — Task Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+  <div class="app ">
+
+    
+    <div class="top-row">
+      <div class="title-block">
+       <button class="home-btn">Home</button>
+      </div>
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+        <svg id="sun" class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="4"></circle>
+          <line x1="12" y1="2" x2="12" y2="4.5"></line>
+          <line x1="12" y1="19.5" x2="12" y2="22"></line>
+          <line x1="4.2" y1="4.2" x2="6" y2="6"></line>
+          <line x1="18" y1="18" x2="19.8" y2="19.8"></line>
+          <line x1="2" y1="12" x2="4.5" y2="12"></line>
+          <line x1="19.5" y1="12" x2="22" y2="12"></line>
+          <line x1="4.2" y1="19.8" x2="6" y2="18"></line>
+          <line x1="18" y1="6" x2="19.8" y2="4.2"></line>
+        </svg>
+        <svg id="moon" class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"></path>
+        </svg>
+      </button>
+    </div>
+
+
+    <div class="toolbar">
+      <div class="add-row">
+        <input type="text" id="task-input" placeholder="Enter a new task&hellip;">
+        <button id="add-task-btn">Add Task</button>
+      </div>
+      <div class="search-row">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="search-input" placeholder="Search entries">
+        <button id="search-btn">Find</button>
+      </div>
+    </div>
+
+    <button class="clear-task task-btn"> Clear all tasks</button>
+    <div>
+      <button class="task-btn all-task-btn">All Tasks</button>
+      <!-- <button class="task-btn complete-task-btn">Completed Tasks</button>
+      <button class="task-btn pending-task-btn">Pending Tasks</button> -->
+    </div>
+    <div id="task-list">
+
+
+      <!-- <div class="task-card completed" data-id="2">
+        <span class="line-no">02</span>
+        <button class="complete-btn" title="Mark complete">&#10003;</button>
+        <span class="task-text">Reply to the vendor email</span>
+        <div class="task-actions">
+          <button class="edit-btn" title="Edit">&#9998;</button>
+          <button class="delete-btn" title="Delete">&#10005;</button>
+        </div>
+      </div> -->
+
+      
+    
+
+    </div>
+
+    
+
+      <div class="empty-state">Nothing recorded.</div>
+   
+
+  </div>
+  <script src="taskScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+    --bg: #efe8d8;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.h1{
+    /* background-color: red; */
+    width: 45%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.time-container{
+    height: 30%;
+    width: 30%;
+    /* background-color: red; */
+    border: 1px solid black;
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#display{
+    font-size: 4rem;
+    /* background-color: black; */
+}
+
+.btns{
+    display: flex;
+    gap: 1rem;
+}
+
+.btns button{
+    padding: 0.3rem;
+    background-color: var(--bg);
+}
+
+button{
+    color: black !important;
+}
+
+  .top-row {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    align-items: center;
+    /* border-bottom: 2px solid var(--ink); */
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+    /* background-color: red   ; */
+    width: 40%;
+  }
+
+    .title-block h1 {
+    font-family: var(--font-head);
+    font-weight: 500;
+    font-size: 32px;
+    margin: 0;
+    letter-spacing: 0.3px;
+  }
+
+  .title-block p {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: var(--ink-soft);
+    font-style: italic;
+  } 
+
+   .home-btn{
+    background-color: var(--bg);
+    padding: 0.2rem;
+  }
+
+
+    #theme-toggle {
+    border: 1.5px solid black;
+    background: var(--surface);
+    color: var(--ink);
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transform: rotate(-4deg);
+  }
+  #theme-toggle:hover { background: var(--accent); color: var(--surface); border-color: var(--accent); }
+
+    .icon-sun{
+    display: none;
+}
+
+.on{
+    color: var(--bg);
+}
+
+.icon-moon{
+      color: black;
+      /* text-transform: up; */
+    display: block;
+  }
